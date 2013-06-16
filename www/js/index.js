@@ -5,6 +5,7 @@ var batteryLevel = 100;
 
 function startService() {
 
+   alert("amit");
     // fetch geo location data
     fetchLocationData();
 
@@ -93,6 +94,7 @@ function updateOptIn(userId, status) {
 
     var networkConnectivityAvailable = isConnected();
 
+   alert("updateOptIn");
     if (networkConnectivityAvailable) {
         var webServiceUrl = getWebServiceBaseUrl() + '/updateOptIn';
         var deviceId = getDeviceId();
